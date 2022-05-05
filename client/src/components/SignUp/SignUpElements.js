@@ -22,7 +22,7 @@ background: #232a34;
 `;
 
 export const ContainerRegister = styled.div`
-  height: 592px;
+  height: auto;
   left: 0;
   right: 0;
   top: 0;
@@ -55,7 +55,7 @@ export const IconRegister = styled(Link)`
   }
 `;
 export const FormContentRegister = styled.div`
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
