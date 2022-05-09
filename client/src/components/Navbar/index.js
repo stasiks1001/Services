@@ -42,6 +42,19 @@ const Navbar = ({ toggle }) => {
               
               <NavItem>
                 <NavLinks
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Home
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks
                   to="about"
                   smooth={true}
                   duration={500}
@@ -55,7 +68,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks
-                  to="footer"
+                  to="contacts"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -69,19 +82,6 @@ const Navbar = ({ toggle }) => {
 
             </NavMenu>
             
-           {/*  <NavBtn>
-              <NavBtnLink
-                to="/city"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                City
-              </NavBtnLink>
-            </NavBtn>
- */}
             <NavBtn>
               <NavBtnLink
                 to="/signup"
@@ -107,6 +107,7 @@ const Navbar = ({ toggle }) => {
                 Sign In
               </NavBtnLink>
             </NavBtn>
+
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

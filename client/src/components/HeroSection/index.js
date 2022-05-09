@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react"; */
 import Video from "../../videos/video.mp4";
 import { NavBtn, NavBtnLink } from "../Navbar/NavbarElements";
 import {
@@ -8,16 +8,12 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
-  ArrowForward,
-  ArrowRight,
 } from "./HeroElements";
 
  
 
 const HeroSection = () => {
- /*  const [hover, setHover] = useState(false); */
 
- 
   return (
     <HeroContainer id="home">
       
@@ -43,7 +39,7 @@ const HeroSection = () => {
                 exact="true"
                 offset={-80}
               >
-                Choose a city {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+                Choose a city 
               </NavBtnLink>
             </NavBtn>
 

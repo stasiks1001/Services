@@ -22,8 +22,8 @@ background: #232a34;
 `;
 
 export const Container = styled.div`
-  min-height: 592px;
-  margin-bottom: 100px;
+  height: auto;
+  margin-bottom: 50px;
   left: 0;
   right: 0;
   top: 0;
@@ -70,14 +70,13 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-  background: #010101;
   max-width: 400px;
   height: auto;
   width: 100%;
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 80px 32px;
+  padding: 40px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 

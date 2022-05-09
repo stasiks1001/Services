@@ -29,7 +29,7 @@ const Footer = () => {
     scroll.scrollTop();
   };
   return (
-    <FooterContainer>
+    <FooterContainer id="contacts">
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
