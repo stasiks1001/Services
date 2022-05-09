@@ -9,6 +9,7 @@ export const BackgroundRegister = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  
 `;
 
 export const VideoBgRegister = styled.video`
@@ -19,6 +20,8 @@ height: 100%;
 object-fit: cover;
 background: #232a34;
 `;
+
+
 
 export const FormContentRegister = styled.div`
   height: 0 auto;
@@ -41,7 +44,6 @@ export const FormRegister = styled.form`
   padding: 80px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
   @media screen and (max-width: 400px) {
     padding: 32px 32px;
   }

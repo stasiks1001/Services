@@ -8,6 +8,7 @@ import {
   FormContentRegister,
   FormRegister,
   FormH1Register,
+  
   FormButtonRegister1,
   FormButtonRegister2,
   FormButtonRegister3,
@@ -27,7 +28,7 @@ const Service = () => {
               <FormH1Register>Services</FormH1Register>
              
                 <FormButtonRegister1 >
-                  <NavLink to="/services/helpers">
+                  <NavLink to="/services/helpers" >
                     Helpers
                   </NavLink>
                 </FormButtonRegister1>
