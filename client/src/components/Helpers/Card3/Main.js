@@ -11,7 +11,7 @@ function Main(){
             <div className="container1">
                 <h1>Johana Jens</h1>
                 <h4>Babysiter</h4>
-                <h5>laurasmith.website</h5>
+                <h5>laurasmith.website.com</h5>
             </div>
             <div className="container2">
                 <p><FaEnvelope />Email</p>

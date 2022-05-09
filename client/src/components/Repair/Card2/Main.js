@@ -9,9 +9,9 @@ function Main(){
     return(
         <div className="main">
             <div className="container1">
-                <h1>Jessica</h1>
-                <h4>Elderly people helper</h4>
-                <h5>jessica.website.com</h5>
+                <h1>Mateuz Lisek</h1>
+                <h4>wall painter</h4>
+                <h5>mateuz.website.com</h5>
             </div>
             <div className="container2">
                 <p><FaEnvelope />Email</p>
