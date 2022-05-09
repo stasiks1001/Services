@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
+  max-width: 100%;
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
