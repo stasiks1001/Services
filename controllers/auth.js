@@ -5,20 +5,25 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const register = async (req,res)=>{
-   
+   console.log("hello worlds");
+
    try {
     const {name, email, password} = req.body
+    console.log(name, email, password)
     if(!name || !email || !password){
         
         throw new BadRequestError('Please give name, email, and password')
     }
-
+   let existUser = await User.findOne({email});
+   if(existUser){
+    res.status(500).json({error: "user existed already!!"})
+   }
     const hashedPassword = await bcrypt.hash(password, 10);
     const hashedUser = {name, email, password: hashedPassword}
 
-    const user = await User.create(hashedUser)
+    const user = await User.create({name, email, password})
     // console.log(user)
-    res.status(201).json({user})
+    res.status(201).json(user)
    } catch (error) {
        console.log(error)
        res.status(500).json({error: "Server Error"})

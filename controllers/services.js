@@ -41,7 +41,7 @@ const deleteService = async (req,res)=>{
         serviceProvider :userId
     })
     if(!work){
-        throw new NotFoundError(`No service exixist with id ${serviceId}`)
+        throw new NotFoundError(`No service exist with id ${serviceId}`)
     }
     res.status(StatusCodes.OK).json({work})
 }
