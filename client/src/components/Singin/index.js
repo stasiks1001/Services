@@ -29,7 +29,7 @@ const SignIn = () => {
               <FormH1>Sing in to your account</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput type="email" required />
-              <FormLabel htmlFor="for">password</FormLabel>
+              <FormLabel htmlFor="for">Password</FormLabel>
               <FormInput type="password" required />
               <FormButton type="submit">Continue</FormButton>
               <Text>Forgot Password</Text>

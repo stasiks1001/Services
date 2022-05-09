@@ -28,7 +28,6 @@ export const ContainerRegister = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: red;
 `;
 
 export const FormWrapRegister = styled.div`
@@ -65,14 +64,13 @@ export const FormContentRegister = styled.div`
 `;
 
 export const FormRegister = styled.form`
-  background: #010101;
   max-width: 400px;
-  height: auto;
+  height: 100%;
   width: 100%;
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 80px 32px;
+  padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -82,10 +80,10 @@ export const FormRegister = styled.form`
 `;
 
 export const FormH1Register = styled.h1`
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: #fff;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 200;
   text-align: center;
 `;
 
@@ -97,7 +95,7 @@ export const FormLabelRegister = styled.label`
 
 export const FormInputRegister = styled.input`
   padding: 16px 16px;
-  margin-bottom: 32px;
+  margin-bottom: 5px;
   border: none;
   border-radius: 4px;
 `;
