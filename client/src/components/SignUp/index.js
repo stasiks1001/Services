@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {useNavigate} from "react-router";
 import axios from "axios";
 import VideoRegister from "../../videos/video.mp4";
 import {
@@ -17,6 +18,7 @@ import {
 } from "./SignUpElements";
 
 const SignUp = () => {
+  let navigate = useNavigate();
   const [user, setUser] = useState({
     name :"",
     email:"",
@@ -39,8 +41,23 @@ const SignUp = () => {
     
        
     }
-    const data = await axios.post("http://localhost:4000/auth/register" ,user,config);
+    try {
+      const data = await axios.post("http://localhost:4000/auth/register" ,user,config);
     console.log(data);
+    if(data.user){
+      navigate("/");
+    }
+      
+    } catch (err) {
+      console.log("catch the error");
+     alert(err.response.data.error);
+      
+    }
+     
+    
+      
+     
+
   }
   else {
     alert("please fill all the inputs!")
