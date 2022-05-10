@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             
             <NavLogo to="/" onClick={toggleHome}>
-              Logo
+              <img src="/images/helplia.png" alt="logo" style={{color: "#fff"}}/>
             </NavLogo>
             
             <NavMenu>
