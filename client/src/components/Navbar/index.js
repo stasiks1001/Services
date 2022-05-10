@@ -12,6 +12,8 @@ import {
   NavBtnLink
 } from "./NavbarElements";
 
+import "../Navbar/styleLogo.css"
+
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -35,7 +37,7 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             
             <NavLogo to="/" onClick={toggleHome}>
-              <img src="/images/helplia.png" alt="logo" style={{color: "#fff"}}/>
+              <img src="/images/helplia1.png" alt="logo" className="logo-image"/>
             </NavLogo>
             
             <NavMenu>
