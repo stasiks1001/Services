@@ -22,7 +22,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   height: 80px;
   z-index: 1;
-  width: 300%;
+  width: 100%;
   padding: 0 24px;
   
 `;
@@ -34,11 +34,10 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 18px;
   font-weight: bold;
   text-decoration: none;
 `;
-
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -78,6 +77,7 @@ export const NavBtn = styled.nav`
   }
 `;
 export const NavBtnLink = styled(LinkR)`
+  margin-right: 32px;
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;

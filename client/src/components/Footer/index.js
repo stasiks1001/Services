@@ -1,5 +1,4 @@
 import React from "react";
-import { animateScroll as scroll } from "react-scroll";
 import {
   FaFacebook,
   FaInstagram,
@@ -16,18 +15,11 @@ import {
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
-  SocialMedia,
-  SocialMediaWrap,
-  SocialLogo,
   WebsiteRights,
-  SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
 
 const Footer = () => {
-  const toggleHome = () => {
-    scroll.scrollTop();
-  };
   return (
     <FooterContainer id="contacts">
       <FooterWrap>
@@ -60,38 +52,37 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle> Social Media</FooterLinkTitle>
-              <FooterLink to="/signin">Instagram</FooterLink>
-              <FooterLink to="/signin"> Facebook </FooterLink>
-              <FooterLink to="/signin"> Twitter</FooterLink>
-              <FooterLink to="/signin"> YouTube </FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMediaWrap>
-          <SocialLogo to="/" onClick={toggleHome}>
-            <WebsiteRights>
-              Dolla © {new Date().getFullYear()}
-              All Rights Reserved.
-            </WebsiteRights>
-            <SocialIcons>
+              
+           
+          
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
+                <FooterLink to="/signin" > Facebook </FooterLink>
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Instagram">
                 <FaInstagram />
+                <FooterLink to="/signin">Instagram</FooterLink>
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Youtube">
                 <FaYoutube />
+                <FooterLink to="/signin"> YouTube </FooterLink>
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="twitter">
                 <FaTwitter />
+                <FooterLink to="/signin"> Twitter</FooterLink>
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin />
+                <FooterLink to="/signin"> LinkedIn </FooterLink>
               </SocialIconLink>
-            </SocialIcons>
-          </SocialLogo>
-        </SocialMediaWrap>
+    
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+        </FooterLinksContainer>
+        <WebsiteRights>
+              Helplia © {new Date().getFullYear()}
+              All Rights Reserved
+            </WebsiteRights>
       </FooterWrap>
     </FooterContainer>
   );
