@@ -28,25 +28,25 @@ const Service = () => {
               <FormH1Register>Services</FormH1Register>
              
                 <FormButtonRegister1 >
-                  <NavLink to="/services/helpers" >
+                  <NavLink className="navlink" to="/services/helpers" >
                     Helpers
                   </NavLink>
                 </FormButtonRegister1>
                 
                 <FormButtonRegister2 >
-                  <NavLink to="/services/it-services">
+                  <NavLink className="navlink" to="/services/it-services">
                     IT-services
                   </NavLink>
                 </FormButtonRegister2>
                 
                 <FormButtonRegister3 >
-                  <NavLink to="/services/repair">
+                  <NavLink className="navlink" to="/services/repair">
                     Repair
                   </NavLink>
                 </FormButtonRegister3>
 
                 <FormButtonRegister4 >
-                  <NavLink to="/services/photography">
+                  <NavLink className="navlink" to="/services/photography">
                     Photography
                   </NavLink>
                 </FormButtonRegister4>

@@ -14,8 +14,11 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-width: 960px) {
+  @media (min-width: 768px) {
     transition: 0.8 all ease;
+    display: flex;
+    flex-direction: column;
+   
   }
 `;
 export const NavbarContainer = styled.div`
@@ -24,7 +27,12 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   
+  
+  }
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -37,6 +45,11 @@ export const NavLogo = styled(LinkR)`
   margin-left: 18px;
   font-weight: bold;
   text-decoration: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -47,12 +60,27 @@ export const NavMenu = styled.ul`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    display: flex;
+    font-size:20px;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media screen and (max-width: 481px) {
+    display: flex;
+    font-size:10px;
+    flex-direction: row;
+    align-items: center;
   }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+  }
 `;
 export const NavLinks = styled(LinkS)`
   color: #fff;
@@ -66,6 +94,7 @@ export const NavLinks = styled(LinkS)`
   &.active {
     border-bottom: 3px solid #01bf71;
   }
+  
 `;
 export const NavBtn = styled.nav`
   display: flex;
@@ -73,7 +102,10 @@ export const NavBtn = styled.nav`
   align-items: center;
  
   @media screen and (max-width: 768px) {
-    display: none;
+    display: flex;
+    margin-left: 70%;
+    justify-content: space-around;
+    gap:10px;
   }
 `;
 export const NavBtnLink = styled(LinkR)`

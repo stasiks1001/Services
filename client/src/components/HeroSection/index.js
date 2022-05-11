@@ -15,7 +15,7 @@ import {
 const HeroSection = () => {
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer id="home"> 
       
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
