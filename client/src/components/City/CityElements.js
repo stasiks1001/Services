@@ -56,6 +56,7 @@ export const FormH1Register = styled.h1`
 `;
 
 export const FormButtonRegister1 = styled.button`
+  text-decoration: none;
   background: #016f71;
   padding: 16px 0;
   margin-bottom: 10px;
@@ -97,4 +98,3 @@ export const FormButtonRegister4 = styled.button`
   font-size: 20px;
   cursor: pointer;
 `;
-

@@ -13,6 +13,7 @@ import {
   FormButtonRegister4,
 } from "./CityElements";
 
+
 const City = () => {
   return (
     <>
@@ -24,25 +25,25 @@ const City = () => {
               <FormH1Register>Cities</FormH1Register>
              
                 <FormButtonRegister1 >
-                  <NavLink to="/city/leipzig">
+                  <NavLink className="navlink" to="/city/leipzig">
                     Leipzig
                   </NavLink>
                 </FormButtonRegister1>
                   
                 <FormButtonRegister2 >
-                  <NavLink to="/city/munich">
+                  <NavLink className="navlink" to="/city/munich">
                     Munich
                   </NavLink>
                 </FormButtonRegister2>
                 
                 <FormButtonRegister3 >
-                  <NavLink to="/city/bayern">
+                  <NavLink className="navlink" to="/city/bayern">
                     Bayern
                   </NavLink>
                 </FormButtonRegister3>
 
                 <FormButtonRegister4 >
-                  <NavLink to="/city/hamburg">
+                  <NavLink className="navlink" to="/city/hamburg">
                     Hamburg
                   </NavLink>
                 </FormButtonRegister4>

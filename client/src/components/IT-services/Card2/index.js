@@ -4,9 +4,6 @@ import Footer from "../Card2/Footer";
 import Main from "../Card2/Main";
 import Navbar from "../Card2/Navbar";
 
-import "../styles.css";
-
-
 const BusinessCardItServices2 = () => {
   const {availableServices} = useParams();
   console.log(availableServices);
