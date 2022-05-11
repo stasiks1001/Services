@@ -4,7 +4,7 @@ import Footer from "../Card1/Footer";
 import Main from "../Card1/Main";
 import Navbar from "../Card1/Navbar";
 
-import "../../styles.css";
+import "../styles.css";
 
 
 const BusinessCard1 = () => {

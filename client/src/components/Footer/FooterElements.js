@@ -50,7 +50,6 @@ export const FooterLinkItems = styled.div`
 export const FooterLinkTitle = styled.h1`
   font-size: 14px;
   margin-bottom: 16px;
-  padding-left:10px;
 `;
 
 export const FooterLink = styled(Link)`
@@ -61,7 +60,6 @@ export const FooterLink = styled(Link)`
   font-size: 14px;
   justify-content: center;
   align-items:center;
-  padding-left:10px;
 
   &:hover {
     color: #01bf71;
@@ -71,14 +69,12 @@ export const FooterLink = styled(Link)`
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin: 100px 40px 0 0;
+  margin: 50px 0 0 0;
   font-size:20px;
 `;
 
 export const SocialIconLink = styled.a`
-  display:flex;
   text-decoration:none;
   color: #fff;
-  font-size: 20px;
-  justify-content: center;
+  font-size: 24px;
 `;

@@ -33,6 +33,14 @@ const Footer = () => {
               <FooterLink to="/signin"> Investors </FooterLink>
               <FooterLink to="/signin"> Terms of Serives </FooterLink>
             </FooterLinkItems>
+            <FooterLinkItems>
+              <FooterLinkTitle> About Us</FooterLinkTitle>
+              <FooterLink to="/signin">how it works</FooterLink>
+              <FooterLink to="/signin"> Testmonials </FooterLink>
+              <FooterLink to="/signin"> Careers</FooterLink>
+              <FooterLink to="/signin"> Investors </FooterLink>
+              <FooterLink to="/signin"> Terms of Serives </FooterLink>
+            </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
@@ -72,7 +80,8 @@ const Footer = () => {
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <WebsiteRights>
-              Helplia © 2022 All Rights Reserved
+              Helplia © {new Date().getFullYear()}
+              All Rights Reserved
             </WebsiteRights>
       </FooterWrap>
     </FooterContainer>
